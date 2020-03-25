@@ -9933,6 +9933,6 @@ input.small {
   );
   background: linear-gradient(90deg, #ecf4fa, #e4eff6);
 }
-.footer-class {
-  background-color: #262626;
+.footer {
+  padding-bottom: 0;
 }
