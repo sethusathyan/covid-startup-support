@@ -13,7 +13,7 @@
   <meta name="author" content="John Doe">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+  <link href="https://fonts.googleapis.com/css?family=Chivo&display=swap" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
 
 </head>
@@ -21,11 +21,40 @@
 <body>
 
 <style>
-  .active {
-    color:#3f51b5 !important;
+  .tablinks.active {
+    color: #d7a7ff !important ;
+    opacity: 1;
   }
   .tabcontent {
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+.tablinks {
+  font-size: 16px;
+  color: hsl(0, 0%, 100%) !important;
+}
+
+h3.sub {
+  color: #fff;
+}
+
+.covid {
+    font-family: 'Chivo', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+
+.covid:before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    background: #2b2b2b;
+    height: 560px;
+    z-index: -1;
+}
+
+h1 {
+  color: #c47aff;
+  font-size: 2.7rem;
 }
 
 /* Go from zero to full opacity */
@@ -39,11 +68,15 @@
   <!-- Page Content -->
   <div class="covid">
     
-    <div class="container max-width-3 mx-auto px1">
-      <div style="flex-direction: column;" class="flex flex-row align-center justify-center pt3 pb3">
-        <h1 class="mt-5 stronger lg-center">Startups vs COVID-19</h1>
-        <h3 class="qdisplay quieter line-height-3 lg-center mt2" >A repository of resources for COVID Startups in India</h2>
+    <div class="container max-width-3 mx-auto px2">
+      <div style="flex-direction: column;" class="flex flex-row align-center justify-center pt4 pb3">
+        <h1 class="mt-5 stronger lg-center">Startups <span style="color: white;">vs</span> COVID-19</h1>
+        <h3 class="display sub line-height-3 lg-center mt2" >A repository of resources for COVID Startups in India 🇮🇳</h2>
       </div>
+      <p class=" stylequiet display line-height-3 mb2 lg-center">    
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out the resources from Startups vs Covid for startups in India who are solving challenges in COVID space." data-url="https://www.startupsvscovid.com" data-hashtags="startupsvscovid" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </p>
+        <br>
     </div>
 
     <div class="container max-width-3 mx-auto">
@@ -55,8 +88,9 @@
 
       </div>
     </div>
+   
 
-    <div class="white py3" style="    border: 1px solid #efefef;">
+    <div class=" py3 px2" >
 
 
     <div id="programs" class="container max-width-4 mx-auto mt3 tabcontent">
@@ -80,16 +114,18 @@
 
 
     <div class="container max-width-4 mx-auto mt3">
-      <h3 class="display strong line-height-3 lg-center mb2"> Some heading heading</h3>
-      <p class="quiet display line-height-3 mb2 lg-center">We are constantly updating the repository with resources for startups sourced from the public, private and non-governmental sectors. If you have an opportunity to share with startups, 
-        please fill this form. We will add it to the repository :) </p>
+      <h3 class="display strong line-height-3 lg-center mb2"> Help us add more opportunites</h3>  
+      <p class=" stylequiet display line-height-3 mb2 lg-center">We are constantly updating the repository with resources for startups sourced from the public, private and non-governmental sectors.</p>
+      <p class=" stylequiet display line-height-3 mb2 lg-center">If you have an opportunity to share with startups, 
+          <a href="https://forms.gle/VdxMAdRp35ZfqeTg9" target="_blank" style="color: #007bff;">Please fill this form</a>. We will add it to the repository :) </p>
     </div>
 
     <div class="max-width-4 mx-auto md-flex lg-flex py4 col-12 big footer pr2 pl2 justify-between">
       <div class="strong py2">
         <div>
-          <span class="quiet link inline-block">Feel free to get in touch with us</span>
+          <span class="quiet link pointer inline-block">Contact us</span>
         </div>
+        <br>
         <div>
           <a href="mailto:someone@example.com?Subject=COVID Startup Support" class="display quiet" target="_blank">abc@xyz.com</a>
         </div>
@@ -98,8 +134,9 @@
           <div>
             <span class="quiet link pointer inline-block">Powered by</span>
           </div>
-            <a href="https://www.91springboard.com/" target="_blank" style="display: block" class="col-12 md-width-fifth  pointer mb1 shopper-logo">
-              <img style="width:150px" src="91slogo.png">
+          <br>
+          <a href="https://www.91springboard.com/" target="_blank" style="display: block" class="col-12 md-width-fifth  pointer mb1 shopper-logo">
+            <img style="width:150px" src="91slogo.png">
             </a>
            
       </div>
