@@ -48,7 +48,7 @@ h3.sub {
     position: absolute;
     width: 100vw;
     background: #2b2b2b;
-    height: 560px;
+    height: 563px;
     z-index: -1;
 }
 
@@ -98,13 +98,14 @@ h1 {
         <br>
     </div>
 
-    <div class="container max-width-3 mx-auto">
-      <div class="flex flex-row align-center justify-center">
+    <div class="container max-width-3 mx-auto ">
+      <div class="flex flex-row align-center justify-center flex-wrap">
         <a href="#" id="programsLink"  onclick="openTab(event, 'funds')" class="tablinks quiet link pointer mb2 mx2 inline-block understroke">Funds</a>
         <a href="#"  onclick="openTab(event, 'programs')" class="tablinks quiet link pointer mb2 mx2 inline-block understroke">Programs</a>
         <a href="#" onclick="openTab(event, 'support')" class=" tablinks quiet link pointer mb2 mx2 inline-block understroke">Other Support</a>
         <a href="#" onclick="openTab(event, 'startups')" class=" tablinks quiet link pointer mb2 mx2 inline-block understroke">Startups</a>
         <a href="#" onclick="openTab(event, 'resources')" class="tablinks quiet link pointer mb2 mx2 inline-block understroke">Resources</a>
+        <a href="#" onclick="openTab(event, 'events')" class="tablinks quiet link pointer mb2 mx2 inline-block understroke">Events</a>
 
       </div>
     </div>   
@@ -112,39 +113,42 @@ h1 {
     <div class=" py3 px2" >
 
       <div id="funds" class="container max-width-4 mx-auto mt3 tabcontent">
-        <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Funds by various organisations to support startups that are solving challenges stemming from COVID</p></div>
 
-        <iframe  class="airtable-embed" src="https://airtable.com/embed/shrLCV4CWZPdc3uus?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>    
-      </div>
+        <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Funds to support startups solving challenges stemming from COVID</p></div>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shrYgJE8pTNUjEG82?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>            </div>
 
     <div id="programs" class="container max-width-4 mx-auto mt3 tabcontent">
-      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>List of hackathons, competitions, accelerators and incubators supporting startups solving challenges stemming from COVID </p></div>
-      <iframe class="airtable-embed" src="https://airtable.com/embed/shr5hbv173QXK6UQZ?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>    
+      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Hackathons, Accelerator and Incubator programs focused on solutions in COVID space</p></div>
+      <iframe class="airtable-embed" src="https://airtable.com/embed/shrfmHXRAms4kkOaK?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
     </div>
-    <div id="support" class="container max-width-4 mx-auto mt3 tabcontent">
-      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Info realted to government approvals/permissions, logistics & manufacuting</p></div>
 
-      <iframe class="airtable-embed" src="https://airtable.com/embed/shr9s7QjIJy7VreYw?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>    </div>
+    <div id="support" class="container max-width-4 mx-auto mt3 tabcontent">
+      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Information about government approvals/permissions, logistics & manufacturing</p></div>
+      <iframe class="airtable-embed" src="https://airtable.com/embed/shrlY8QexO5P6fAZe?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        </div>
 
 
     <div id="startups" class="container max-width-4 mx-auto mt3 tabcontent" >
-      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Startups that care currently solving challenges created by COVID</p></div>
-      <iframe  class="airtable-embed" src="https://airtable.com/embed/shrKWZdM773ah9L9p?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>    
-    </div>
+      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Startups that are currently solving challenges created by COVID</p></div>
+      <iframe class="airtable-embed" src="https://airtable.com/embed/shrKLG0l1CvwnYeqY?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        </div>
 
 
     <div  id="resources" class="container max-width-4 mx-auto mt3 tabcontent">
-      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Articles, podcasts, blogs etc to help you work efficiently from home</p></div>
-      <iframe class="airtable-embed" src="https://airtable.com/embed/shrtVuY9YNx004s9m?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-        </div>
+      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Articles, podcasts, blogs & tools to help you work efficiently from home</p></div>
+      <iframe class="airtable-embed" src="https://airtable.com/embed/shrvgVDPfg4ijZvL6?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+            </div>
+
+    <div  id="events" class="container max-width-4 mx-auto mt3 tabcontent">
+      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Join for these virtual events from the comfort of your home</p></div>
+      <iframe class="airtable-embed" src="https://airtable.com/embed/shrbBHfHacfVnnmj7?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>            </div>
 
     <div class="container max-width-4 mx-auto mt3">
       <h3 class="display strong line-height-3 lg-center mb2"> Help us add more opportunites🚀</h3>  
       <p class=" stylequiet display line-height-3 mb2 lg-center">This platform is built & maintained by a bunch of startup enthusiasts. We are constantly updating the repository with resources for startups sourced from the public, private and non-governmental sectors.</p>
-      <!-- <p class=" stylequiet display line-height-3 mb2 lg-center">If you have an opportunity to share with startups: 
-          <a href="https://forms.gle/VdxMAdRp35ZfqeTg9" target="_blank" style="color: #007bff;">Please fill this form</a>. We will add it to the repository :) </p> -->
+      <p class=" stylequiet display line-height-3 mb2 lg-center">Interested in contributing to the repository? </p>
           <div class=" display line-height-3 mb2 lg-center  ">
-          <a href="#" class="button-style " >Contribute</a>  
+          <a href="https://airtable.com/shrksZTOQ1aJV2VmE" class="button-style  "target="_blank" >Contribute</a>  
         </div>  
     </div>
 
