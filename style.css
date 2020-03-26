@@ -6046,7 +6046,7 @@ a.text-lighten4.understroke.link.active,
   padding-left: 2rem;
 }
 .py3 {
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   padding-bottom: 2rem;
 }
 .px3 {

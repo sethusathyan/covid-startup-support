@@ -57,11 +57,30 @@ h1 {
   font-size: 2.7rem;
 }
 
+.tab-desc{
+  padding-bottom: 2rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.button-style{
+  font-size: 0.9rem;
+    background: #403563;
+    border-radius: 6px;
+    padding: 12px 18px;
+    color:#fff !important;
+    font-weight: 600;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
+
 </style>
  
 
@@ -71,53 +90,62 @@ h1 {
     <div class="container max-width-3 mx-auto px2">
       <div style="flex-direction: column;" class="flex flex-row align-center justify-center pt4 pb3">
         <h1 class="mt-5 stronger lg-center">Startups <span style="color: white;">vs</span> COVID-19</h1>
-        <h3 class="display sub line-height-3 lg-center mt2" >A repository of resources for COVID Startups in India 🇮🇳</h2>
+        <h3 class="display sub line-height-3 lg-center mt2" >A repository of resources for Indian Startups solving challenges created by COVID</h2>
       </div>
       <p class=" stylequiet display line-height-3 mb2 lg-center">    
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Check out the resources from Startups vs Covid for startups in India who are solving challenges in COVID space." data-url="https://www.startupsvscovid.com" data-hashtags="startupsvscovid" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </p>
+      </p>
         <br>
     </div>
 
     <div class="container max-width-3 mx-auto">
       <div class="flex flex-row align-center justify-center">
-        <a href="#" id="programsLink" onclick="openTab(event, 'programs')" class="tablinks quiet link pointer mb2 mx2 inline-block understroke">Programs</a>
-        <a href="#"  onclick="openTab(event, 'funds')" class="tablinks quiet link pointer mb2 mx2 inline-block understroke">Funds</a>
-        <a href="#" onclick="openTab(event, 'startups')" class=" tablinks quiet link pointer mb2 mx2 inline-block understroke">COVID Startups</a>
-        <a href="#" onclick="openTab(event, 'resources')" class="tablinks quiet link pointer mb2 mx2 inline-block understroke">Remote Work Resources</a>
+        <a href="#" id="programsLink"  onclick="openTab(event, 'funds')" class="tablinks quiet link pointer mb2 mx2 inline-block understroke">Funds</a>
+        <a href="#"  onclick="openTab(event, 'programs')" class="tablinks quiet link pointer mb2 mx2 inline-block understroke">Programs</a>
+        <a href="#" onclick="openTab(event, 'support')" class=" tablinks quiet link pointer mb2 mx2 inline-block understroke">Other Support</a>
+        <a href="#" onclick="openTab(event, 'startups')" class=" tablinks quiet link pointer mb2 mx2 inline-block understroke">Startups</a>
+        <a href="#" onclick="openTab(event, 'resources')" class="tablinks quiet link pointer mb2 mx2 inline-block understroke">Resources</a>
 
       </div>
-    </div>
-   
+    </div>   
 
     <div class=" py3 px2" >
 
+      <div id="funds" class="container max-width-4 mx-auto mt3 tabcontent">
+        <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Funds by various organisations to support startups that are solving challenges stemming from COVID</p></div>
+
+        <iframe  class="airtable-embed" src="https://airtable.com/embed/shrLCV4CWZPdc3uus?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>    
+      </div>
 
     <div id="programs" class="container max-width-4 mx-auto mt3 tabcontent">
-      <iframe  class="airtable-embed" src="https://airtable.com/embed/shrFdO9NfVfwDQyJq?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>List of hackathons, competitions, accelerators and incubators supporting startups solving challenges stemming from COVID </p></div>
+      <iframe class="airtable-embed" src="https://airtable.com/embed/shr5hbv173QXK6UQZ?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>    
     </div>
+    <div id="support" class="container max-width-4 mx-auto mt3 tabcontent">
+      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Info realted to government approvals/permissions, logistics & manufacuting</p></div>
 
-
-    <div id="funds" class="container max-width-4 mx-auto mt3 tabcontent">
-      <iframe  class="airtable-embed" src="https://airtable.com/embed/shrLCV4CWZPdc3uus?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>    
-    </div>
+      <iframe class="airtable-embed" src="https://airtable.com/embed/shr9s7QjIJy7VreYw?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>    </div>
 
 
     <div id="startups" class="container max-width-4 mx-auto mt3 tabcontent" >
+      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Startups that care currently solving challenges created by COVID</p></div>
       <iframe  class="airtable-embed" src="https://airtable.com/embed/shrKWZdM773ah9L9p?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>    
     </div>
 
 
     <div  id="resources" class="container max-width-4 mx-auto mt3 tabcontent">
-      <iframe  class="airtable-embed" src="https://airtable.com/embed/shrbKCQ9Bfx6NrIZj?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-    </div>
-
+      <div class ="display sub line-height-3 lg-center mt2 tab-desc"><p>Articles, podcasts, blogs etc to help you work efficiently from home</p></div>
+      <iframe class="airtable-embed" src="https://airtable.com/embed/shrtVuY9YNx004s9m?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        </div>
 
     <div class="container max-width-4 mx-auto mt3">
       <h3 class="display strong line-height-3 lg-center mb2"> Help us add more opportunites🚀</h3>  
       <p class=" stylequiet display line-height-3 mb2 lg-center">This platform is built & maintained by a bunch of startup enthusiasts. We are constantly updating the repository with resources for startups sourced from the public, private and non-governmental sectors.</p>
-      <p class=" stylequiet display line-height-3 mb2 lg-center">If you have an opportunity to share with startups: 
-          <a href="https://forms.gle/VdxMAdRp35ZfqeTg9" target="_blank" style="color: #007bff;">Please fill this form</a>. We will add it to the repository :) </p>
+      <!-- <p class=" stylequiet display line-height-3 mb2 lg-center">If you have an opportunity to share with startups: 
+          <a href="https://forms.gle/VdxMAdRp35ZfqeTg9" target="_blank" style="color: #007bff;">Please fill this form</a>. We will add it to the repository :) </p> -->
+          <div class=" display line-height-3 mb2 lg-center  ">
+          <a href="#" class="button-style " >Contribute</a>  
+        </div>  
     </div>
 
     <div class="max-width-4 mx-auto md-flex lg-flex py4 col-12 big footer pr2 pl2 justify-between">
@@ -127,7 +155,7 @@ h1 {
         </div>
         <br>
         <div>
-          <a href="mailto:someone@example.com?Subject=COVID Startup Support" class="display" target="_blank">abc@xyz.com</a>
+          <a href="mailto:startups@91springboard.com?Subject=COVID Startup Support" class="display" target="_blank">startups@91springboard.com</a>
         </div>
       </div>
       <div class="md-width-fifth strong py2">
