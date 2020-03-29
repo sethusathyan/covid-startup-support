@@ -255,7 +255,6 @@ function openTab(evt, cityName) {
   if (item.src) return;
   
   const source = item.getAttribute("data-src"); // path
-  console.log(source);
   const parent = item.parentElement; // wrapper
   const frameRect = parent.getBoundingClientRect(); // wrapper dimensions
   
